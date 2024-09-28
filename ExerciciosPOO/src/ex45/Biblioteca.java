@@ -1,29 +1,34 @@
 package ex45;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Biblioteca {
-    class Item {
-        protected String titulo;
-        protected String autor;
+    private List<Item> itens;
 
-        public Item(String titulo, String autor) {
-            this.titulo = titulo;
-            this.autor = autor;
-        }
+    public Biblioteca() {
+        itens = new ArrayList<>();
+    }
 
-        public String getTitulo() {
-            return titulo;
-        }
+    public void adicionarItem(Item item) {
+        itens.add(item);
+        System.out.printf("Item adicionado: %s%n", item);
+    }
 
-        public String getAutor() {
-            return autor;
-        }
+    public void removerItem(String titulo) {
 
-        @Override
-        public String toString() {
-            return String.format("%s por %s", titulo, autor);
-        }
+                return;
+    }
+
+    public void buscarItem(String titulo) {
+            return;
+    }
+
+    public void listarItens() {
     }
 }
+
+
 
 
 
